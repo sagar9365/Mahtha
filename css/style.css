@@ -392,7 +392,9 @@ footer {
 }
 
 .go-top {
-  margin-top: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   background: #2980b9;
   border: none;
   padding: 8px 10px;

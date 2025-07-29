@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahtha - Tech News</title>
+  <meta name="description" content="Latest technology news and updates on Mahtha." />
+  <meta name="keywords" content="Tech News, Technology, Gadgets, Mahtha" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo" onclick="window.location.href='index.html'">Mahtha</div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search..." />
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="tech-news.html">Tech News</a>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="gadgets.html">Gadgets</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="trending.html">Trending</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Health and Fitness</a>
+          <a href="#">Technology</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Follow Us</button>
+        <div class="dropdown-content">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Subscribe</button>
+        <div class="dropdown-content">
+          <a href="#">Subscribe Website</a>
+          <a href="#">Subscribe Newsletter</a>
+        </div>
+      </div>
+
+      <div class="mobile-theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light</span>
+      </div>
+    </nav>
+    <div class="header-buttons">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="category">
+      <h2>Tech News</h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-ai-revolution.html'">
+          <img src="images/image2.jpg" alt="AI Revolution" />
+          <h3>AI Revolution 2025</h3>
+          <p>Latest trends and breakthroughs in AI shaping the future.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-5g-expansion.html'">
+          <img src="images/image3.jpg" alt="5G Expansion" />
+          <h3>5G Expansion</h3>
+          <p>How 5G is changing mobile internet speeds worldwide.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-quantum-computing.html'">
+          <img src="images/image10.jpg" alt="Quantum Computing" />
+          <h3>Quantum Computing Breakthrough</h3>
+          <p>Exploring new frontiers in computing power and speed.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <div class="social-icons">
+      <a href="#">F</a>
+      <a href="#">T</a>
+      <a href="#">I</a>
+      <a href="#">W</a>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 Mahtha. All rights reserved.</p>
+    <button class="go-top">⬆</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahtha - Tech News, Blogs & Gadgets</title>
+  <meta name="description" content="Mahtha - Latest technology news, mobiles, laptops, gadgets and trending blogs. Stay updated with the tech world.">
+  <meta name="keywords" content="Tech News, Mobiles, Laptops, Gadgets, Blogs, Mahtha">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo" onclick="window.location.href='index.html'">Mahtha</div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="tech-news.html">Tech News</a>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="gadgets.html">Gadgets</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="trending.html">Trending</a>
+
+      <!-- Category Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Health and Fitness</a>
+          <a href="#">Technology</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+
+      <!-- Follow Us Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Follow Us</button>
+        <div class="dropdown-content">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Subscribe Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Subscribe</button>
+        <div class="dropdown-content">
+          <a href="#">Subscribe Website</a>
+          <a href="#">Subscribe Newsletter</a>
+        </div>
+      </div>
+
+      <!-- Mobile Theme Toggle -->
+      <div class="mobile-theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch">
+          <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light</span>
+      </div>
+    </nav>
+
+    <!-- Header Buttons -->
+    <div class="header-buttons">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="featured-photo">
+      <img src="images/image1.jpg" alt="Featured AI Article">
+      <div class="featured-caption">
+        <h2>AI Revolution 2025</h2>
+        <p>Explore how AI is transforming industries and everyday life.</p>
+        <a href="article-ai-revolution.html" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Tech News -->
+    <section class="category">
+      <h2>Tech News <a href="tech-news.html" class="view-all">View All</a></h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-ai-revolution.html'">
+          <img src="images/image2.jpg" alt="AI Revolution">
+          <h3>AI Revolution 2025</h3>
+          <p>Latest trends and breakthroughs in AI shaping the future.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-5g-expansion.html'">
+          <img src="images/image3.jpg" alt="5G Expansion">
+          <h3>5G Expansion</h3>
+          <p>How 5G is changing mobile internet speeds worldwide.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mobiles -->
+    <section class="category">
+      <h2>Mobiles <a href="mobiles.html" class="view-all">View All</a></h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-galaxy-fold.html'">
+          <img src="images/image4.jpg" alt="Galaxy Z Fold">
+          <h3>Samsung Galaxy Z Fold 7</h3>
+          <p>Foldable phone with improved hinge and display technology.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-iphone-17.html'">
+          <img src="images/image5.jpg" alt="iPhone 17 Pro Max">
+          <h3>iPhone 17 Pro Max</h3>
+          <p>Apple’s flagship phone with next-gen AI camera features.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Laptops -->
+    <section class="category">
+      <h2>Laptops <a href="laptops.html" class="view-all">View All</a></h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-macbook-ultra.html'">
+          <img src="images/image6.jpg" alt="MacBook Ultra">
+          <h3>MacBook Ultra</h3>
+          <p>Powerful M5 chip designed for creators and developers.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-rog-strix.html'">
+          <img src="images/image7.jpg" alt="ASUS ROG Strix">
+          <h3>ASUS ROG Strix 2025</h3>
+          <p>High-end gaming laptop with RTX 5090 GPU and OLED screen.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gadgets -->
+    <section class="category">
+      <h2>Gadgets <a href="gadgets.html" class="view-all">View All</a></h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-smart-glasses.html'">
+          <img src="images/image8.jpg" alt="Smart Glasses">
+          <h3>Smart Glasses 2.0</h3>
+          <p>Next-gen AR smart glasses with built-in AI assistant.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-wireless-charger.html'">
+          <img src="images/image9.jpg" alt="Wireless Charger">
+          <h3>Wireless Charging Pad</h3>
+          <p>Fast 100W wireless charging for all your devices.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#">F</a>
+      <a href="#">T</a>
+      <a href="#">I</a>
+      <a href="#">W</a>
+    </div>
+
+    <!-- Newsletter -->
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your email">
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <p>&copy; 2025 Mahtha. All rights reserved.</p>
+    <button class="go-top">⬆</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mobiles - Mahtha</title>
+  <meta name="description" content="Latest mobile phone reviews, news and updates." />
+  <meta name="keywords" content="mobiles, smartphones, reviews, mobile news" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo" onclick="window.location.href='index.html'">Mahtha</div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search mobiles..." />
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="tech-news.html">Tech News</a>
+      <a href="mobiles.html" class="active">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="gadgets.html">Gadgets</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="trending.html">Trending</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Health and Fitness</a>
+          <a href="#">Technology</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Follow Us</button>
+        <div class="dropdown-content">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Subscribe</button>
+        <div class="dropdown-content">
+          <a href="#">Subscribe Website</a>
+          <a href="#">Subscribe Newsletter</a>
+        </div>
+      </div>
+
+      <div class="mobile-theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light</span>
+      </div>
+    </nav>
+
+    <div class="header-buttons">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="category">
+      <h2>Latest Mobiles</h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-galaxy-fold.html'">
+          <img src="images/image4.jpg" alt="Samsung Galaxy Z Fold 7" />
+          <h3>Samsung Galaxy Z Fold 7</h3>
+          <p>Foldable phone with improved hinge and display technology.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-iphone-17.html'">
+          <img src="images/image5.jpg" alt="iPhone 17 Pro Max" />
+          <h3>iPhone 17 Pro Max</h3>
+          <p>Apple’s flagship phone with next-gen AI camera features.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-pixel-10.html'">
+          <img src="images/image15.jpg" alt="Google Pixel 10" />
+          <h3>Google Pixel 10</h3>
+          <p>Pixel’s newest smartphone with advanced AI integration.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook">F</a>
+      <a href="#" aria-label="Twitter">T</a>
+      <a href="#" aria-label="Instagram">I</a>
+      <a href="#" aria-label="WhatsApp">W</a>
+    </div>
+
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+      <input type="email" placeholder="Your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <p>&copy; 2025 Mahtha. All rights reserved.</p>
+    <button class="go-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">⬆</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

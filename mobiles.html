@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahtha - Mobiles</title>
+  <meta name="description" content="Latest mobile news and reviews on Mahtha." />
+  <meta name="keywords" content="Mobiles, Smartphones, Phones, Mahtha" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo" onclick="window.location.href='index.html'">Mahtha</div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search..." />
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="tech-news.html">Tech News</a>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="gadgets.html">Gadgets</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="trending.html">Trending</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Health and Fitness</a>
+          <a href="#">Technology</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Follow Us</button>
+        <div class="dropdown-content">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Subscribe</button>
+        <div class="dropdown-content">
+          <a href="#">Subscribe Website</a>
+          <a href="#">Subscribe Newsletter</a>
+        </div>
+      </div>
+
+      <div class="mobile-theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light</span>
+      </div>
+    </nav>
+    <div class="header-buttons">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="category">
+      <h2>Mobiles</h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-galaxy-fold.html'">
+          <img src="images/image4.jpg" alt="Galaxy Z Fold" />
+          <h3>Samsung Galaxy Z Fold 7</h3>
+          <p>Foldable phone with improved hinge and display technology.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-iphone-17.html'">
+          <img src="images/image5.jpg" alt="iPhone 17 Pro Max" />
+          <h3>iPhone 17 Pro Max</h3>
+          <p>Apple’s flagship phone with next-gen AI camera features.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-pixel-10.html'">
+          <img src="images/image11.jpg" alt="Google Pixel 10" />
+          <h3>Google Pixel 10</h3>
+          <p>Google’s latest smartphone with clean Android experience.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <div class="social-icons">
+      <a href="#">F</a>
+      <a href="#">T</a>
+      <a href="#">I</a>
+      <a href="#">W</a>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 Mahtha. All rights reserved.</p>
+    <button class="go-top">⬆</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech News - Mahtha</title>
+  <meta name="description" content="Latest technology news and updates." />
+  <meta name="keywords" content="technology, tech news, gadgets, innovation" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo" onclick="window.location.href='index.html'">Mahtha</div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search tech news..." />
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="tech-news.html" class="active">Tech News</a>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="gadgets.html">Gadgets</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="trending.html">Trending</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Health and Fitness</a>
+          <a href="#">Technology</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Follow Us</button>
+        <div class="dropdown-content">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Subscribe</button>
+        <div class="dropdown-content">
+          <a href="#">Subscribe Website</a>
+          <a href="#">Subscribe Newsletter</a>
+        </div>
+      </div>
+
+      <div class="mobile-theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light</span>
+      </div>
+    </nav>
+
+    <div class="header-buttons">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="category">
+      <h2>Latest Tech News</h2>
+      <div class="cards">
+        <article class="card" onclick="window.location.href='article-tech-ai.html'">
+          <img src="images/image2.jpg" alt="AI Breakthrough" />
+          <h3>AI Breakthrough 2025</h3>
+          <p>How AI is revolutionizing technology this year.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-tech-quantum.html'">
+          <img src="images/image3.jpg" alt="Quantum Computing" />
+          <h3>Quantum Computing Advances</h3>
+          <p>The latest developments in quantum computers.</p>
+        </article>
+        <article class="card" onclick="window.location.href='article-tech-robotics.html'">
+          <img src="images/image4.jpg" alt="Robotics Innovations" />
+          <h3>Robotics Innovations</h3>
+          <p>New robots designed for everyday use and industry.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook">F</a>
+      <a href="#" aria-label="Twitter">T</a>
+      <a href="#" aria-label="Instagram">I</a>
+      <a href="#" aria-label="WhatsApp">W</a>
+    </div>
+
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+      <input type="email" placeholder="Your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <p>&copy; 2025 Mahtha. All rights reserved.</p>
+    <button class="go-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">⬆</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

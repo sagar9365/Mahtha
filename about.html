@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Mahtha</title>
+  <meta name="description" content="Learn more about Mahtha, our mission, vision, and values in delivering tech news and trending updates.">
+  <meta name="keywords" content="Mahtha about, tech news about us, Mahtha vision mission">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo" onclick="window.location.href='index.html'">Mahtha</div>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="tech-news.html">Tech News</a>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="gadgets.html">Gadgets</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="trending.html">Trending</a>
+
+      <!-- Dropdown: Categories -->
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Education</a>
+          <a href="#">Health and Fitness</a>
+          <a href="#">Technology</a>
+          <a href="#">History</a>
+        </div>
+      </div>
+
+      <!-- Dropdown: Follow Us -->
+      <div class="dropdown">
+        <button class="dropbtn">Follow Us</button>
+        <div class="dropdown-content">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Dropdown: Subscribe -->
+      <div class="dropdown">
+        <button class="dropbtn">Subscribe</button>
+        <div class="dropdown-content">
+          <a href="#">Subscribe Website</a>
+          <a href="#">Subscribe Newsletter</a>
+        </div>
+      </div>
+
+      <!-- Theme Toggle (Mobile) -->
+      <div class="mobile-theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch">
+          <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light</span>
+      </div>
+    </nav>
+
+    <div class="header-buttons">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <main class="page-content">
+    <h1>About Mahtha</h1>
+    <p>Mahtha is your go-to hub for all things technology. We bring the latest updates on gadgets, mobiles, laptops, and emerging trends across industries. Our goal is to simplify tech for everyone — from beginners to enthusiasts.</p>
+
+    <h2>Our Mission</h2>
+    <p>To provide accurate, timely, and engaging tech content that helps our readers stay informed and make smarter decisions.</p>
+
+    <h2>Our Vision</h2>
+    <p>We aim to become a leading platform where technology meets simplicity, bridging the gap between experts and everyday users.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#">F</a>
+      <a href="#">T</a>
+      <a href="#">I</a>
+      <a href="#">W</a>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your email">
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <p>&copy; 2025 Mahtha. All rights reserved.</p>
+    <button class="go-top">⬆</button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
